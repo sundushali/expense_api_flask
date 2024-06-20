@@ -1,0 +1,6 @@
+pandas
+Flask
+Flask-RESTful
+gspread
+google-auth
+google-api-python-client
