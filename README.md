@@ -35,23 +35,32 @@ This command maps port 5000 of the Docker container to port 5000 on your host ma
 ## 1.4 - API Endpoints
 Following are the API endpoints and their usage:
 
-GET /api/:                             Retrieves all records from Google sheet
+GET /api/:                             
+Retrieves all records from Google sheet
 
-GET /api/category/<string:value>:      Retrieves all records by <category> from Google sheet
+GET /api/category/<string:value>:      
+Retrieves all records by <category> from Google sheet
 
-GET /api/summarybycategory:            Shows summary (count,Total,average) by category
+GET /api/summarybycategory:            
+Shows summary (count,Total,average) by category
 
-GET /api/paymentmode/<string:value>:   Retrieves all records by <paymentmode> from Google sheet
+GET /api/paymentmode/<string:value>:   
+Retrieves all records by <paymentmode> from Google sheet
 
-GET /api/summarybypaymode:             Shows summary (count,Total) by payment mode
+GET /api/summarybypaymode:             
+Shows summary (count,Total) by payment mode
 
-GET /api/expensesbydaterange:          Shows expenses by date range (start_date,end_date) as query parameters. start_date,end_date should be in (dd/mm/yyyy)
+GET /api/expensesbydaterange:          
+Shows expenses by date range (start_date,end_date) as query parameters. start_date,end_date should be in (dd/mm/yyyy)
 
-POST /api/add endpoint:                To add new expense. The input will be in JSON.
+POST /api/add endpoint:                
+To add new expense. The input will be in JSON.
 
-PUT /api/update/<string:expense_id>:   To update expense by <expense_id>
+PUT /api/update/<string:expense_id>:   
+To update expense by <expense_id>
 
-DELETE /api/delete/<string:expense_id>: To delete expense by <expense_id>
+DELETE /api/delete/<string:expense_id>: 
+To delete expense by <expense_id>
 
 ##  1.5 - With Example
 
